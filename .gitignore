@@ -1,0 +1,34 @@
+# Builds & binaries
+CREDITS-fml.txt
+LICENSE-fml.txt
+MinecraftForge-Credits.txt
+MinecraftForge-License.txt
+README.txt
+forge-*-changelog.txt
+build/
+run/
+bin/
+target/
+libs/
+launcher/
+.gradle/
+*.zip
+*.jar
+
+!gradle-wrapper.jar
+
+# Tmp files
+*~
+*#
+
+# IDEs
+eclipse/
+.classpath
+.metadata/
+.project
+.settings
+.idea/
+*.iml
+
+# Misc
+*.rej

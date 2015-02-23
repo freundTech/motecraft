@@ -1,0 +1,104 @@
+[center][size=32px]Motecraft[/size][/center]
+
+Note: This mod works on Linux and Mac out of the box.
+To run this mod on Windows you need the WIDCOMM bluetooth stack, which comes with many bluetooth-devices (All by broadcom and also some noname). If your device isn't supported by the WIDCOMM bluetooth stack you can try [url=https://xii9190.wordpress.com/2008/05/15/bluetooth-still-not-working-with-wii/|_blank]this hack[/url] (requires a WIDCOMM bluetooth dongle during installation but not later on) or [url=http://forum.gsmhosting.com/vbb/f237/how-install-widcomm-drivers-342643/|_blank]this hack[/url] (requires no WIDCOMM bluetooth dongle).
+I'm not responsible for any damage to your computer when using those hacks!!!
+
+[img]http://i.imgur.com/wDyMcVt.png[/img]
+
+[left][size=16px]This Mod allows you to play Minecraft with a Wii Remote.[/size][/left]
+[left][size=16px]Please note that this is still beta. There will be some bugs.[/size][/left]
+
+[left][size=16px]Current Version: Beta Build 1 (0.4)[/size][/left]
+
+
+[left][size=18px]Screenshots[/size][/left]
+[spoiler]I'll record a showcase video soon, but for now: Here is a small demo video I made during development:
+http://youtu.be/nVBkkhzaTAU[/spoiler]
+
+[left][size=18px]Installation:[/size][/left]
+[spoiler][numlist]
+[*]Get the latest version of forge for 1.8 (Installer) from [url=http://files.minecraftforge.net/|_blank]here[/url].
+I tested it with 11.14.0.1296 but other versions should also work.
+Install it, start your Minecraft and close it again.
+[*]Download MoteCraft from [url=http://freundtech.bplaced.net/files/motecraft/motecraft-0.4.jar|_blank]here[/url] and put it in the mods folder in your .minecraft folder.
+[*]Download my custom modified versions of motej-library and motej-extras (licensed under [url=http://motej.sourceforge.net/license.html|_blank]Apache License Version 2.0[/url]) from [url=http://freundtech.bplaced.net/files/motecraft/motej-library-1.0-SNAPSHOT.jar|_blank]here[/url] and [url=http://freundtech.bplaced.net/files/motecraft/motej-extras-1.0-SNAPSHOT.jar|_blank]here[/url].
+Also put them in your mods folder.
+[*]Download Bluecove-2.1.1-SNAPSHOT.jar from [url=http://snapshot.bluecove.org/distribution/download/2.1.1-SNAPSHOT/2.1.1-SNAPSHOT.63/|_blank]here[/url] and also put it in your mods folder. If you are running Linux also download Bluecove-gpl-2.1.1-SNAPSHOT.jar from the same link.
+[*]Turn Bluetooth on your PC on and start Minecraft. As soon as the mojang logo appears press 1 & 2 on your wii remote. Wait until Minecraft found your remote, plug in your nunchuck and you should be ready to play. (If Minecraft doesn't find your remote try restarting it.)
+[/numlist][/spoiler]
+
+[left][size=18px]Controls[/size][/left]
+[spoiler][size=16px]Walking[/size]
+Use the analog stick on the nunchuck to walk around.
+Move it forward to sneak/walk/run forwards (depending on how far you move it forward).
+Move it to the sides to look left and right. The further you move it the faster you turn.
+Press Z to lock your view. Instead of rotating you will now walk sideways when moving the analog stick to the sides.
+Press C to jump.
+Tilt your nunchuck to look up/down/left/right. Because the accelerometer is very inaccurate I had to apply some smoothing.
+
+[size=16px]Interaction[/size]
+Press A on your Remote and shake the Remote to break Blocks and hit Mobs/Players.
+Press B on your Remote to use Items. Bows and Swords are used by just pressing B. Other Items require pressing B and shaking the Remote.
+Press Home on your Remote to open/close your Inventory.
+Press +/- on your Remote to switch through your Hotbar-slots.
+
+[size=16px]Inventory[/size]
+When inside an Inventory move your remote around to change the cursor location.
+Press A to click and B to rightclick.
+NOTE: You need to have an Infrared Emitter for the remote as reference Point for this to work.
+I suggest putting the Wii Sensorbar in front of your monitor and just turning your Wii on.
+Other things might also work (I've heard you can use candles, but haven't tested it.)
+[size=16px]Other[/size]
+May try taking some damage? ;)[/spoiler]
+
+[size=18px]Troubleshooting[/size]
+[spoiler][size=16px]Minecraft crashing on startup[/size]
+On Windows:
+To run this mod on Windows you need the WIDCOMM bluetooth stack, which comes with many bluetooth-devices (All by broadcom and also some noname). If your device isn't supported by the WIDCOMM bluetooth stack you can try [url=https://xii9190.wordpress.com/2008/05/15/bluetooth-still-not-working-with-wii/|_blank]this hack[/url] (requires a WIDCOMM bluetooth dongle during installation but not later on) or [url=http://forum.gsmhosting.com/vbb/f237/how-install-widcomm-drivers-342643/|_blank]this hack[/url] (requires no WIDCOMM bluetooth dongle).
+I'm not responsible for any damage to your computer when using those hacks!!!
+
+On Linux:
+Make sure you have bluecove-gpl-2.1.1.jar in your mods folder.
+Try installing libbluetooth and the development headers for libbluetooth
+
+Debian:
+[code]sudo apt-get install libbluetooth-dev[/code] RPM:
+[code]sudo yum install bluez-libs-devel[/code] 
+[size=16px]Wiimote not getting detected[/size]
+Try restarting Minecraft and pressing 1 & 2 on the Remote as soon as the Mojang screen shows up.
+
+[size=16px]Still not working?[/size]
+Leave a comment below containing your crash log, operating system and what you have tried to fix it.[/spoiler]
+
+[left][size=18px]TODO[/size][/left]
+[spoiler]Create possibility for servers to force Wiimote Input (So you can have some fair Wiimote PVP games ;) )
+Add Onscreen Keyboard for Chat etc.
+Downgrade to 1.7 and 1.6 for compatibility with modpacks
+Add Balance Board support, so you can actually walk :P
+Fix [s]LOTS of[/s] some Bugs.[/spoiler]
+
+[size=18px]Knows Bugs[/size]
+[spoiler]Block breaking progress not getting reset when stopping (I have no Idea what's causing that...)
+Wiimote sometimes not getting detected (Probably a bug in motej)
+Everything that gets reported during beta
+
+Please report any bugs you find down below in the comments.[/spoiler]
+
+[left][size=18px]Changelog[/size][/left]
+[spoiler][size=16px]Beta Build 1 (0.4)[/size]
+Added config file
+Added custom Splash Texts
+Fixed lots of bugs
+
+[size=16px]Alpha Build 1 (0.3)[/size]
+Added Mouse-mode for when inside an Inventory
+
+[size=16px]Pre-Alpha Build 2 (0.2)[/size]
+Improved looking arround (a lot)
+Fixed rotation getting messed up when closing inventory
+
+[size=16px]Pre-Alpha Build 1 (0.1)[/size]
+First public release[/spoiler]
+
+I will probably release the sourcecode to public soon.

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "motecraft",
+  "name": "MoteCraft",
+  "description": "Mod that allows you to play your favorite game (Minecraft of course) with a Wii Remote.",
+  "version": "Beta Build 1",
+  "mcversion": "${mcversion}",
+  "url": "http://twitter.com/freundTech",
+  "updateUrl": "",
+  "authorList": ["freundTech"],
+  "credits": "Special thanks to the guys from motej for creating such an amazing Wii Remote library.",
+  "logoFile": "assets/motecraft/wiimote.png",
+  "screenshots": [],
+  "dependencies": ["motej", "mod_MinecraftForge"]
+}
+]
